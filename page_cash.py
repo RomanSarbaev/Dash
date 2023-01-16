@@ -36,7 +36,8 @@ chart_1 = dcc.Graph(id='chart_1', figure=fig_1)
 drop_down_1 = dcc.Dropdown(df_range_year, id='cash_dropdown_1')
 
 # График 2
-# fig_2 = px.line(df.groupby(by=['sale_month','sale_day'], as_index=False)['amt'].sum(), x='sale_day', y='amt', color='sale_month')
+# fig_2 = px.line(df.groupby(by=['sale_month','sale_day'], as_index=False)['amt'].sum(),
+# x='sale_day', y='amt', color='sale_month')
 
 df['amt'] = df['amt'].fillna(0)
 df_temp = df.groupby(['sale_month', 'sale_day'], as_index=False)['amt'].sum()
