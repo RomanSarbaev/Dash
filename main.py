@@ -21,7 +21,6 @@ app.layout = html.Div([
     html.Div(id='tabs-content')
 ])
 
-
 # Добавляем содержимое в зависимости от выбранной вкладки
 @app.callback(Output('tabs-content', 'children'), Input('tabs', 'value'))
 def render_content(tab):
