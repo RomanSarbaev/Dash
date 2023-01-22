@@ -5,7 +5,7 @@ import plotly.express as px
 from dash import html
 import numpy as np
 
-# Берем данные 1
+# Берем данные 2
 
 df = pd.read_csv('cash.csv', sep=';', encoding='utf-8', decimal=',')
 df = df.dropna()
